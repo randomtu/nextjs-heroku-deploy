@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "npm ./pages/index.js",
+    "start": "next start",
     "heroku-postbuild": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
