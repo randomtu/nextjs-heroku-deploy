@@ -1,5 +1,4 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import Styles from '../css/style.css';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -14,7 +13,8 @@ export default class MyDocument extends Document {
           <title>RANDOM by randomtu</title>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-          <style dangerouslySetInnerHTML={{ __html: Styles }} />
+          <link rel="stylesheet" href="/static/style.css" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
         </Head>
         <body className="top">
           <Main />
